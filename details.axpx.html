@@ -1,0 +1,553 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-69476976-1"></script>
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag(){dataLayer.push(arguments);}
+
+  gtag('js', new Date());
+
+ 
+
+  gtag('config', 'UA-69476976-1');
+
+</script>
+
+<link rel="apple-touch-icon" sizes="57x57" href="/images/fabicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/images/fabicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/images/fabicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/images/fabicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/images/fabicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/images/fabicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/images/fabicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/images/fabicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/fabicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/images/fabicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/fabicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/images/fabicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/fabicon/favicon-16x16.png">
+<link rel="manifest" href="/images/fabicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/images/fabicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="stylesheet" type="text/css" href="/Css/fullpage.css" />
+<link rel="stylesheet" type="text/css" href="/Css/slick.css" />
+<link rel="stylesheet" type="text/css" href="/Css/style.css" />
+<link rel="stylesheet" type="text/css" href="/Css/colorbox.css" />
+<link rel="stylesheet" type="text/css" href="/Css/home.css" />
+<link rel='stylesheet' type="text/css" href='/Css/animate.min.css'>
+<link rel="stylesheet" type="text/css" href="/Css/menu.css"> 
+<!--<link rel="stylesheet" type="text/css" href="/Css/inside-kris.css">--> 
+<link rel="stylesheet" type="text/css" href="/Css/main_content.css">
+<link rel="stylesheet" type="text/css" href="/Css/complaint-management.css">
+<script type="text/javascript" src="/Script/modernizr.js"></script> 
+
+
+<!--
+<link rel="stylesheet" type="text/css" href="/Css/inside.css">
+<link rel="stylesheet" type="text/css" href="/Css/media.css">
+<link rel="stylesheet" type="text/css" href="/Css/csr.css">
+    <link rel="stylesheet" type="text/css" href="/Css/login-style.css">
+<link rel="stylesheet" type="text/css" href="/Css/login.css">
+ -->
+
+
+
+
+
+
+
+<title>
+
+</title><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+   
+        <script language="javascript" type="text/javascript">
+
+            function allownumbers(e) {
+                var key = window.event ? e.keyCode : e.which;
+                var keychar = String.fromCharCode(key);
+                var reg = new RegExp("[0-9]")
+                if (key == 8) {
+                    keychar = String.fromCharCode(key);
+                }
+                if (key == 46) {
+                    return;
+                }
+                if (key == 13) {
+                    key = 8;
+                    keychar = String.fromCharCode(key);
+                }
+
+                return reg.test(keychar);
+            }
+            function CheckNumericKeyInfo($char, $mozChar) {
+                if ($mozChar != null) { // Look for a Mozilla-compatible browser
+                    if (($mozChar >= 48 && $mozChar <= 57) || $mozChar == 0 || $char == 8 || $mozChar == 13) $RetVal = true;
+                    else {
+                        $RetVal = false;
+                        alert('Please Enter Only Numeric Values For KNo (For Example - 33100123455).');
+                    }
+                }
+                else { // Must be an IE-compatible Browser
+                    if (($char >= 48 && $char <= 57) || $char == 13) $RetVal = true;
+                    else {
+                        $RetVal = false;
+                        alert('Please Enter Only Numeric Values For KNo (For Example - 33100123455).');
+                    }
+                }
+                return $RetVal;
+            }
+            function showmsg() {
+                window.alert('Thanks for your inputs');
+            }
+
+  </script>
+     <script language="javascript" type="text/javascript">
+
+         function ChangeImage() {
+
+             document.getElementById('Img').src = "Img.aspx?rand=" + Math.random();
+             return false;
+         }
+
+
+
+    </script>
+</head>
+<body>
+    <form name="form1" method="post" action="regcomp_detailsrevamp.aspx" id="form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUILTg3MjIxMDYPZBYCAgEPZBYcZg8PFgIeBFRleHQFgwFPcHRpb24gU2VsZWN0ZWQgOiA8dT5ObyBQb3dlcjwvdT4gKE8mTSAgQ29tcGxhaW50KS4gPGJyPjxhIGhyZWY9J2NvbXBsYWludC1yZWdpc3RyYXRpb24uYXNweCc+Q2xpY2sgaGVyZTwvYT4gdG8gc2VsZWN0IG90aGVyIG9wdGlvbmRkAgEPDxYCHwBlZGQCAg8PFgIeB1Zpc2libGVnZGQCAw8PFgQeCUJhY2tDb2xvcgohHgRfIVNCAghkZAIFDw8WAh8BZ2RkAgYPDxYIHwIKIR4IUmVhZE9ubHlnHwMCCB8ABRhNci4gUkFNRVNIV0FSIERBU1MgQk9IRVRkZAIHDw9kFgIeCm9ua2V5cHJlc3MFJmphdmFzY3JpcHQ6cmV0dXJuIGFsbG93bnVtYmVycyhldmVudCk7ZAIIDw9kFgIfBQUmamF2YXNjcmlwdDpyZXR1cm4gYWxsb3dudW1iZXJzKGV2ZW50KTtkAgkPDxYCHwFnZGQCCg8PFggfAgohHwRnHwMCCB8ABYkBUExPVCBOTyAxOSBLSC4gTk8uIDM4LzIyIEdST1VORCBGTE9PUiBHUkFNIFNBQkhBIFNUUkVFVCBOTy4gR0FMSSBOTy0yIFZJTExBR0UgTUFNVVJQVVIgQ0lUWSBERUxISSAxMTAwNDAgTEFORE1BUksgTkVBUiBSQURIQSBTV0FNSSBBU0hSQU1kZAINDxBkZBYAZAIPDw8WAh8BZ2RkAhAPDxYEHwIKIR8DAghkZAIRDw8WBB4HVG9vbFRpcAUXSW1hZ2UgVmVyaWZpY2F0aW9uIENvZGUeCEltYWdlVXJsBQp+L0ltZy5hc3B4ZGRkjxa9v723bAVIOcwU32DuAnlJ/CI7/HBtF1dnNqSutcQ=" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="FA96F2E7" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAo+Yg5UIlmHX9pXTkoEn0B9EcOgvHRMMdknX1hKEqsA4Zysd+iXqvJbUqR3wDY/ZCBqaqe4WPrPNXSx0nLeM0MxIkjkwO2Hn9+IKdzB92ZTmTEmrsU+Uo4cUGFL28mNcdDPnskGUk9pqqILy5LAvTehaihfy87szX5n2LyriLG2osZV+oV9ZHJPsVyMonIqKvYfeetr3c4H3XmikgJc2ZlI+O/nW7ap4phzpExocMkEqc8lYKgM3TV2apVtDd0IKaE=" />   
+      <script language="javascript" type="text/javascript">
+    function avoidSpecialChars(elm, str) {
+        for (var i = 0; i < str.length; i++) {
+            if (elm.value.indexOf(str.charAt(i)) >= 0) {
+                elm.focus();
+                return false;
+            }
+        }
+        return true;
+    }
+
+    function search_submit() {
+        if (document.getElementById('searchtext').value.search(/\S/) == -1) {
+            alert('Please enter search text');
+            document.getElementById('searchtext').focus();
+            return false;
+        }
+        else {
+            if (!avoidSpecialChars(document.getElementById('searchtext'), '<>')) {
+                alert('Please don' + "'" + 't use <,> in search');
+                document.getElementById('searchtext').focus();
+                return false;
+            }
+        }
+
+        if (document.getElementById('searchtext').value.length < 3) {
+            alert('Search not possible because you may have entered wrong search string');
+            document.getElementById('searchtext').focus();
+            return false;
+        }
+
+        window.location.href = '/sitesearch/' + document.getElementById('searchtext').value;
+        return false;
+    }
+</script>
+
+<style>
+.skiptocontent { text-align: left; font-family:Arial, Helvetica, sans-serif; color:#FFFFFF; font-size:12px;}
+.skiptocontent a {display: inline; position: absolute; top:0px; left: -500px; width: 14em; height: 1px; overflow: hidden;text-decoration:none; }
+.skiptocontent a:focus, .skiptocontent a:active { position: absolute; top:0px; left: 0; width: auto; height: auto; overflow: visible; z-index:10000; background: #555; border: solid #333 2px; color: #fff;  }
+
+</style>
+
+<!--<div class="skiptocontent" style="width:200px;"><a href="#contentstarts" title="Jump to Content">Jump to Content</a></div>
+<div class="skiptocontent" style="width:200px;"><a href="#topnavigation" title="Jump to Top Navigation">Jump to Top Navigation</a></div>
+<div class="skiptocontent" style="width:200px;"><a href="#breadcrumbstarts" title="Jump to Breadcrumb">Jump to Breadcrumb</a></div>
+<div class="skiptocontent" style="width:200px;"><a href="#topmenustarts" title="Jump to Main Navigation">Jump to Main Navigation</a></div>
+<div class="skiptocontent" style="width:200px;"><a href="#subnavigationstarts" title="Jump to Sub Navigation">Jump to Sub Navigation</a></div>
+<div class="skiptocontent" style="width:200px;"><a href="#bottomnavigation" title="Jump to Bottom Navigation">Jump to Footer</a></div>-->
+
+<!--<header class="cd-main-header wow slideInDown" data-wow-duration="0.8" data-wow-delay="0.8s">-->
+<header class="cd-main-header">
+<div class="mb_search" ></div>
+    <a class="cd-logo" href="/"><img src="/images/logo.png" alt="Tata Power DDL logo" title="Tatapower ddl logo"></a>
+    <ul class="login_sec">
+        <li class="login">
+<!--        <span class="increaseFont"><img src="/images/font-up-arrow.png" alt="Increase font size" title="Increase font size" style=" vertical-align:middle;"></span> 
+<span class="decreaseFont"><img src="/images/font-down-arrow.png" alt="Decrease font size" title="Decrease font size" style=" vertical-align:middle;"></span> 
+<span class="resetFont"><img src="/images/reset-icon.png" alt="Reset font size" title="Reset font size" style=" vertical-align:middle;"></span>-->
+        <a href='#'><i><img src='/images/login_ic.png' /></i>Login</a></li><div class='login_popbox'><ul><li><a href='https://etender.tatapower-ddl.com/irj/portal'>Business Associates (Vendors)</a></li><li><a href='/myaccount/customer-login.aspx'>Customer</a></li></ul></div>
+        <li><img src="/images/wih_younonstop.png" class="brands" alt=""></li>
+    </ul>
+
+    <ul class="cd-header-buttons">
+        <li><a class="cd-nav-trigger" href="#cd-primary-nav">Menu<span></span></a></li>
+    </ul> <!-- cd-header-buttons -->
+</header>
+
+<nav class="cd-nav">
+    <div class="top_middle">
+        <div class="top_contact">
+		<div class="row">
+            <ul class="tol_login">
+                <li>Toll Free No - <span>19124 / 1800-208-9124</span></li>
+                <!--<li>Safety Call Centre No- <span>9871990984</span></li>-->
+            </ul>
+            <ul class="search_box">
+                <li><a href="http://tatapower-ddl.com:81/" class="hindi" aria-label="tatapower-ddl hindi" rel="noreferrer" target="_blank">Hindi</a></li>
+                <li><div class="siteSearch"><span><input type="text" placeholder="Search.." maxlength="50" name="searchtext" id="searchtext" aria-label="Search.." onkeypress="javascript: if (navigator.appName.toLowerCase().indexOf('microsoft') >= 0) { if (window.event.keyCode == 13) { return search_submit(); } } else { if (event.which == 13) { return search_submit(); } }" /><input class="searchBtn" type="submit" value="submit" id="" onclick="    javascript: return search_submit();"></span></div><strong class="search_trigger"><i><img src="/images/search_ic.png" alt=""></i> Search</strong></li>
+            </ul>
+        </div>
+		</div>
+
+        <!-- top menu start -->
+        <ul id='cd-primary-nav' class='cd-primary-nav'><li class='has-children'><a href='#' aria-label='CORPORATE' >CORPORATE</a><ul class='cd-secondary-nav is-hidden'><li class='go-back'><a href='#0' aria-label='Back'>Back</a></li><li class='has-children'><a href='#' aria-label='Our Company' >Our Company</a><ul class='is-hidden'><li class='go-back'><a href='#0' aria-label='our-company'>our-company</a></li><li><a href='/corporate/our-company/company-profile' aria-label='Company Profile' >Company Profile</a></li><li><a href='/corporate/our-company/corporate-policies' aria-label='Corporate Policies' >Corporate Policies</a></li><li><a href='https://www.tatapower-ddl.com/vd-details/198/114/about-tata-power-ddl' aria-label='Corporate Film' >Corporate Film</a></li><li><a href='/images/Tata Power-DDL Corporate Anthem.wav' aria-label='Corporate Anthem' target='_blank' title='Corporate Anthem opening in new window'>Corporate Anthem</a></li><li><a href='/corporate/our-company/corporate-philosophy' aria-label='Corporate Philosophy' >Corporate Philosophy</a></li><li><a href='/corporate/our-company/leadership' aria-label='Leadership' >Leadership</a></li><li><a href='/award-recognition/142/corporate/our-company/awards' aria-label='Awards'>Awards</a></li></ul></li><li class='has-children'><a href='#' aria-label='Innovation Journey' >Innovation Journey</a><ul class='is-hidden'><li class='go-back'><a href='#0' aria-label='innovation-journey'>innovation-journey</a></li><li></li><li><a href='/file/143' aria-label='Excellence Journey' title='Downloadable file'>Excellence Journey</a></li><li></li><li><a href='/corporate/innovation-journey/business-excellence-initiatives' aria-label='Business Excellence Initiatives' >Business Excellence Initiatives</a></li><li><a href='/corporate/innovation-journey/case-studies' aria-label='Case Studies' >Case Studies</a></li><li><a href='/corporate/innovation-journey/presentations-sector-perspectives' aria-label='Presentations and Sector Perspectives' >Presentations and Sector Perspectives</a></li><li><a href='/corporate/innovation-journey/inno-thon-app-a-thon' aria-label='Inno-thon & App-a-thon' >Inno-thon & App-a-thon</a></li><li><a href='/corporate/innovation-journey/stakeholder-testimonials' aria-label='Stakeholder Testimonials' >Stakeholder Testimonials</a></li></ul></li><li class='has-children'><a href='#' aria-label='Evolving into a Smart Utility' >Evolving into a Smart Utility</a><ul class='is-hidden'><li class='go-back'><a href='#0' aria-label='evolving-into-a-smart-utility'>evolving-into-a-smart-utility</a></li><li><a href='/corporate/evolving-into-smart-utility/overview' aria-label='Overview' >Overview</a></li><li></li><li><a href='/corporate/evolving-into-smart-utility/smart-grid-lab' aria-label='Smart Grid Lab' >Smart Grid Lab</a></li></ul></li><li class='has-children'><a href='#' aria-label='Sustainability' >Sustainability</a><ul class='is-hidden'><li class='go-back'><a href='#0' aria-label='sustainability'>sustainability</a></li><li><a href='/corporate/sustainability/overview' aria-label='Overview' >Overview</a></li><li><a href='/csr/overview' aria-label='Social Innovation(CSR)' >Social Innovation(CSR)</a></li><li><a href='/file/1258' aria-label='Sustainability Report 2016-17' title='Downloadable file'>Sustainability Report 2016-17</a></li><li><a href='/corporate/sustainability/dsm-initiatives' aria-label='DSM Initiatives' >DSM Initiatives</a></li><li><a href='/solar-rooftop/overview' aria-label='Solar Rooftop' >Solar Rooftop</a></li></ul></li></ul></li><li class='has-children'><a href='#' aria-label='CONSULTING SERVICES' >CONSULTING SERVICES</a><ul class='cd-secondary-nav is-hidden'><li class='go-back'><a href='#0' aria-label='Back'>Back</a></li><li><a href='/consultancy-services/introduction' aria-label='Introduction' >Introduction</a></li><li class='has-children'><a href='#' aria-label='Service Offerings' >Service Offerings</a><ul class='is-hidden'><li class='go-back'><a href='#0' aria-label='service-offerings'>service-offerings</a></li><li><a href='/consultancy-services/service-offerings/overview' aria-label='Overview' >Overview</a></li><li><a href='/consultancy-services/service-offerings/project-management-consultancy-services' aria-label='Project Management Consultancy' >Project Management Consultancy</a></li><li><a href='/consultancy-services/service-offerings/technical-advisory-services' aria-label='Technical Advisory Services' >Technical Advisory Services</a></li><li><a href='/consultancy-services/service-offerings/loss-reduction-services' aria-label='Loss Reduction' >Loss Reduction</a></li><li><a href='/consultancy-services/service-offerings/managed-services' aria-label='Managed Services' >Managed Services</a></li><li><a href='/consultancy-services/service-offerings/renewable-works' aria-label='Renewable Works' >Renewable Works</a></li><li><a href='/uploadeddocuments/TATA%20POWER-DDL%20Consultancy%20Services%20Brochure.pdf' aria-label='Consultancy Services Brochure' target='_blank' title='Consultancy Services Brochure opening in new window'>Consultancy Services Brochure</a></li></ul></li><li></li><li><a href='/consultancy-services/projects' aria-label='Projects' >Projects</a></li><li><a href='/vendor_enquiry/enquiry.aspx' aria-label='Enquiry' >Enquiry</a></li><li class='has-children'><a href='#' aria-label='Skill Development' >Skill Development</a><ul class='is-hidden'><li class='go-back'><a href='#0' aria-label='skill-development'>skill-development</a></li><li><a href='/consultancy-services/skill-development/learning-centres-infrastructure' aria-label='Learning Centres & Infrastructure' >Learning Centres & Infrastructure</a></li><li><a href='/consultancy-services/skill-development/training-programs' aria-label='Training Programs' >Training Programs</a></li><li><a href='/consultancy-services/skill-development/external-participants' aria-label='External Participants' >External Participants</a></li></ul></li></ul></li><li class='has-children'><a href='#' aria-label='CUSTOMERS' >CUSTOMERS</a><ul class='cd-secondary-nav is-hidden'><li class='go-back'><a href='#0' aria-label='Back'>Back</a></li><li class='has-children'><a href='#' aria-label='EODB' >EODB</a><ul class='is-hidden'><li class='go-back'><a href='#0' aria-label='eodb'>eodb</a></li><li><a href='/customers/apply-for-new-connection/ease-of-doing-business' aria-label='Ease of Doing Business' >Ease of Doing Business</a></li><li><a href='/newconneodb/select_details' aria-label='Apply now' >Apply now</a></li></ul></li><li class='has-children'><a href='#' aria-label='Bill Payment' >Bill Payment</a><ul class='is-hidden'><li class='go-back'><a href='#0' aria-label='bill-payment'>bill-payment</a></li><li><a href='/billpay/paybillonline.aspx' aria-label='Pay Bill Online' >Pay Bill Online</a></li><li><a href='/billpay/mobilesearch.aspx' aria-label='Pay by entering Registered mobile No' >Pay by entering Registered mobile No</a></li><li><a href='/billpay/billpaymentoption.aspx' aria-label='Mode of Bill Payments' >Mode of Bill Payments</a></li><li><a href='/billpay/download-last-epayment-receipt.aspx' aria-label='Download Last E-payment receipt' >Download Last E-payment receipt</a></li><li><a href='/customers/bill-payment/locate-nearest-payment-center' aria-label='Locate nearest payment center' >Locate nearest payment center</a></li><li><a href='https://www.google.com/maps/d/viewer?msa=0&mid=zhbhCRyGVDwU.kYl29KpaqoA4' aria-label='Bill Payment Centers & ATPM’s' target='_blank' title='Bill Payment Centers & ATPM’s opening in new window'>Bill Payment Centers & ATPM’s</a></li><li><a href='/customers/bill-payment/confirmation-slip' aria-label='Last Payment Confirmation Slip' >Last Payment Confirmation Slip</a></li><li><a href='/customers/bill-payment/payment-avenues' aria-label='Payment Avenues' >Payment Avenues</a></li></ul></li><li class='has-children'><a href='#' aria-label='Solutions' >Solutions</a><ul class='is-hidden'><li class='go-back'><a href='#0' aria-label='solutions'>solutions</a></li><li></li><li><a href='/customers/solutions/customer-centricity' aria-label='Customer Centricity' >Customer Centricity</a></li><li><a href='/customers/solutions/complaint-management' aria-label='Complaint Management' >Complaint Management</a></li><li></li><li><a href='/file/1171' aria-label='Demand Side Management' title='Downloadable file'>Demand Side Management</a></li><li><a href='/customers/solutions/customer-information' aria-label='Customer Information Centre' >Customer Information Centre</a></li><li><a href='/customers/solutions/locate-customer-care-centers' aria-label='Locate Customer Care Centers / District Offices, etc.' >Locate Customer Care Centers / District Offices, etc.</a></li><li><a href='/customers/solutions/consumer-own-choice-meter' aria-label='Consumer Own Choice Meter' >Consumer Own Choice Meter</a></li><li><a href='/customers/solutions/electrification-scheme' aria-label='Electrification & Shifting Scheme' >Electrification & Shifting Scheme</a></li><li></li><li><a href='/customers/solutions/forms' aria-label='Forms' >Forms</a></li><li><a href='/customers/solutions/faqs' aria-label='FAQs' >FAQs</a></li><li><a href='/customers/solutions/tariff-details' aria-label='Tariff Details' >Tariff Details</a></li><li><a href='/htshifting/tnc.aspx' aria-label='HT Shifting Request' >HT Shifting Request</a></li></ul></li><li class='has-children'><a href='#' aria-label='Association with IGL' >Association with IGL</a><ul class='is-hidden'><li class='go-back'><a href='#0' aria-label='association-with-igl'>association-with-igl</a></li><li><a href='https://webonline.igl.co.in:8077/sap/bc/bsp/sap/zumcui5/webcontent/index.html?directPayment#page|%7B' aria-label='Pay IGL Bill Online' target='_blank' title='Pay IGL Bill Online opening in new window'>Pay IGL Bill Online</a></li></ul></li><li class='has-children'><a href='#' aria-label='Outage Details' >Outage Details</a><ul class='is-hidden'><li class='go-back'><a href='#0' aria-label='outage-details'>outage-details</a></li><li><a href='/scheduleoutage/119/customers/outage-details/scheduled-outage' aria-label='Scheduled Outage' >Scheduled Outage</a></li><li><a href='/customer/complaint/outage-against-ca-number.aspx' aria-label='Outage against CA number' >Outage against CA number</a></li><li><a href='/power/real time-power-scenario.aspx' aria-label='Tata Power-DDL Real Time Power Scenario' >Tata Power-DDL Real Time Power Scenario</a></li></ul></li><li class='has-children'><a href='#' aria-label='Energy Conservation' >Energy Conservation</a><ul class='is-hidden'><li class='go-back'><a href='#0' aria-label='energy-conservation'>energy-conservation</a></li><li><a href='/customers/energy-conservation/overview' aria-label='Overview' >Overview</a></li><li><a href='/customers/energy-conservation/energy-glossary' aria-label='Energy Glossary' >Energy Glossary</a></li><li><a href='/customers/energy-conservation/tips-on-energy-usage' aria-label='Tips on Energy Usage' >Tips on Energy Usage</a></li><li><a href='/energyclub/Home.aspx' aria-label='Energy Club' target='_blank' title='Energy Club opening in new window'>Energy Club</a></li><li><a href='/ecs/forms/loginportal.aspx' aria-label='Energy Saving Calculator' >Energy Saving Calculator</a></li><li><a href='/customers/energy-conservation/schemes' aria-label='Schemes' >Schemes</a></li></ul></li><li class='has-children'><a href='#' aria-label='Feedback' >Feedback</a><ul class='is-hidden'><li class='go-back'><a href='#0' aria-label='feedback'>feedback</a></li><li><a href='/customer/aka/writetous.aspx' aria-label='Write to Us' >Write to Us</a></li><li><a href='' aria-label='Share Your Opinion' target='_blank' title='Share Your Opinion opening in new window'>Share Your Opinion</a></li><li><a href='/corporate/innovation-journey/stakeholder-testimonials' aria-label='Testimonials' >Testimonials</a></li></ul></li><li><a href='/consumer/connectionrelatedservice.aspx' aria-label='Connection Related Service' >Connection Related Service</a></li><li><a href='/smartniwas/overview' aria-label='SMART NIWAS' >SMART NIWAS</a></li></ul></li><li class='has-children'><a href='#' aria-label='Vendor Zone' >Vendor Zone</a><ul class='cd-secondary-nav is-hidden'><li class='go-back'><a href='#0' aria-label='Back'>Back</a></li><li><a href='/vendor-zone/overview' aria-label='Overview' >Overview</a></li><li class='has-children'><a href='#' aria-label='Tenders' >Tenders</a><ul class='is-hidden'><li class='go-back'><a href='#0' aria-label='tenders'>tenders</a></li><li><a href='/tender/advisory-tender-advertisements' aria-label='Tender Advertisements' >Tender Advertisements</a></li><li><a href='/tender/advisory-e-tender' aria-label='E-Tenders' >E-Tenders</a></li><li><a href='/tender/advisory-new-vendor-registration' aria-label='New Vendor Registration' >New Vendor Registration</a></li><li></li></ul></li><li><a href='/dwsun/loginportal.aspx' aria-label='Daily work schedule Unique Number' >Daily work schedule Unique Number</a></li><li><a href='/dwsuncivil/loginportal.aspx' aria-label='EM and Civil Daily work schedule Unique Number' >EM and Civil Daily work schedule Unique Number</a></li><li><a href='/vendor/loginportal.aspx' aria-label='Check Invoice/Stock Status' >Check Invoice/Stock Status</a></li><li><a href='/bamsmodule/loginportal.aspx' aria-label='BA Relations Process' >BA Relations Process</a></li><li><a href='http://tatapower-ddl.com/tpddlelecba/' aria-label='BA Details' target='_blank' title='BA Details opening in new window'>BA Details</a></li><li><a href='/vendor-zone/ba-grievance-portal' aria-label='BA Grievance Portal' >BA Grievance Portal</a></li><li><a href='/vendor-zone/business-associate-meet' aria-label='Business Associate Meet' >Business Associate Meet</a></li><li><a href='/vendor-zone/gst-for-business-partners' aria-label='GST for Business Partners' >GST for Business Partners</a></li><li><a href='/vendor-zone/advisory-tender-corrigendum-documents' aria-label='Tender Corrigendum Documents' >Tender Corrigendum Documents</a></li></ul></li><li class='has-children'><a href='#' aria-label='CSR' >CSR</a><ul class='cd-secondary-nav is-hidden'><li class='go-back'><a href='#0' aria-label='Back'>Back</a></li><li><a href='/csr/overview' aria-label='Overview' >Overview</a></li><li class='has-children'><a href='#' aria-label='Initiatives' >Initiatives</a><ul class='is-hidden'><li class='go-back'><a href='#0' aria-label='initiatives'>initiatives</a></li><li><a href='/csr/sig-initiatives/unnati' aria-label='Unnati' >Unnati</a></li><li><a href='/csr/sig-initiatives/ujjawal' aria-label='Ujjawal' >Ujjawal</a></li><li><a href='/csr/sig-initiatives/sanjeevani' aria-label='Sanjeevani' >Sanjeevani</a></li><li><a href='/csr/sig-initiatives/club-enerji' aria-label='Club Enerji' >Club Enerji</a></li></ul></li><li><a href='/file/176' aria-label='Media Coverage' title='Downloadable file' >Media Coverage</a></li><li><a href='/file/1083' aria-label='CSR Brochure' title='Downloadable file' >CSR Brochure</a></li><li><a href='/csr/important-lists' aria-label='Important Lists' >Important Lists</a></li><li><a href='/file/1085' aria-label='CSR Annual Report' title='Downloadable file' >CSR Annual Report</a></li></ul></li><li class='has-children'><a href='#' aria-label='SOLAR ROOFTOP' >SOLAR ROOFTOP</a><ul class='cd-secondary-nav is-hidden'><li class='go-back'><a href='#0' aria-label='Back'>Back</a></li><li><a href='/solar-rooftop/overview' aria-label='Overview' >Overview</a></li><li><a href='/solar-rooftop/about-solar-rooftop' aria-label='About Solar Rooftop' >About Solar Rooftop</a></li><li><a href='/solar-rooftop/our-solar-journey' aria-label='Our Solar Journey' >Our Solar Journey</a></li><li><a href='/solar-rooftop/our-offerings-to-the-customer' aria-label='Our Offerings to the Customer' >Our Offerings to the Customer</a></li><li><a href='/solar-rooftop/faq' aria-label='FAQ' >FAQ</a></li><li class='has-children'><a href='#' aria-label='Apply for Net-Metering Connection' >Apply for Net-Metering Connection</a><ul class='is-hidden'><li class='go-back'><a href='#0' aria-label='apply-for-net-metering-connection'>apply-for-net-metering-connection</a></li><li><a href='/solar/applynetmetering.aspx' aria-label='Apply Now' >Apply Now</a></li><li><a href='/solar-rooftop/register' aria-label='Register for Rooftop Solar Panel' >Register for Rooftop Solar Panel</a></li><li><a href='/rooftop/calculator' aria-label='Solar Calculator' >Solar Calculator</a></li></ul></li></ul></li><li class='has-children'><a href='#' aria-label='MEDIA' >MEDIA</a><ul class='cd-secondary-nav is-hidden'><li class='go-back'><a href='#0' aria-label='Back'>Back</a></li><li><a href='/press-release/199/media/press-releases' aria-label='Press Releases' >Press Releases</a></li><li><a href='/events/197/media/events' aria-label='Events' >Events</a></li><li><a href='/pressarticle/196/media/press-coverages' aria-label='Press Coverages' >Press Coverages</a></li><li><a href='/videoalbum/198/media/video-radio-clips' aria-label='Video Radio Clips' >Video Radio Clips</a></li><li><a href='/advertisement/201/media/advertisements' aria-label='Advertisements' >Advertisements</a></li><li></li><li></li></ul></li></ul>
+        <!--top menu end -->
+
+        <!--<ul id="cd-primary-nav" class="cd-primary-nav ">
+            <li class="has-children">
+                <a href="http://codyhouse.co/?p=409">CORPORATE</a>
+
+                <ul class="cd-secondary-nav is-hidden">
+                    <li class="go-back"><a href="#0">Back</a></li>
+                    <li class="has-children">
+                        <a href="#">Our Company</a>
+
+                        <ul class="is-hidden">
+                            <li class="go-back"><a href="#0">Our Company</a></li>
+                            <li><a href="#">Company Profile</a></li>
+                            <li><a href="#">Corporate Philosophy</a></li>
+                            <li><a href="#">Corporate Policies</a></li>
+                            <li><a href="#">Corporate Anthem</a></li>
+                            <li><a href="#">Leadership</a></li>
+                            <li><a href="#">Awards</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="has-children">
+                        <a href="#">Innovation Journey</a>
+
+                        <ul class="is-hidden">
+                            <li class="go-back"><a href="#0">Innovation Journey</a></li>
+                            <li><a href="#">Excellence Journey</a></li>
+                            <li><a href="#">Pioneering Initiatives</a></li>
+                            <li><a href="#">Business Excellance Initiatives</a></li>
+                            <li><a href="#">Case Studies</a></li>
+                            <li><a href="#">Presentations & Sector Perspectives</a></li>
+                            <li><a href="#">Inno-thon & App-a-thon</a></li>
+                            <li><a href="#">Stakeholder Testimonials</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="has-children">
+                        <a href="#">Evolving into a Smart Utility</a>
+
+                        <ul class="is-hidden">
+                            <li class="go-back"><a href="#0">Evolving into a Smart Utility</a></li>
+                            <li><a href="#">Overview</a></li>
+                            <li><a href="#">Smart Grid Technologies</a></li>
+                            <li><a href="#">Smart Grid Lab</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="has-children">
+                        <a href="#">Sustainability</a>
+
+                        <ul class="is-hidden">
+                            <li class="go-back"><a href="#0">Evolving into a Smart Utility</a></li>
+                            <li><a href="#">Overview</a></li>
+                            <li><a href="#">Social Innovation</a></li>
+                            <li><a href="#">People Matters</a></li>
+                            <li><a href="#">Product Stewardship</a></li>
+                            <li><a href="#">Occupational Health & Safety</a></li>
+                            <li><a href="#">Solar Power</a></li>
+                            <li><a href="#">Sustainability Report 2016-17</a></li>
+                            <li><a href="#">DSM Initiatives</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Business Development</a></li>
+            <li><a href="#">CUSTOMERS</a></li>
+            <li><a href="#">Vendor Zone</a></li>
+            <li><a href="#">CSR</a></li>
+            <li><a href="#">SOLAR ROOFTOP</a></li>
+            <li><a href="#">MEDIA</a></li>
+        </ul>--> <!-- primary-nav -->
+
+    </div>
+</nav> <!-- cd-nav -->
+
+    	<div class="quicklink_left wow slideInLeft" data-wow-duration="0.2" data-wow-delay="0.2s" id="dsk_quick">
+		<span class='left_sec' id='clickme'><ul><li><img src='/HomepageContent/live_help_31216e8d30.png' alt='Live Help'></li><li><img src='/HomepageContent/feedback_ic_4eb8b024d2.png' alt='Feedback'></li><li><img src='/HomepageContent/contact_ic_01d9b41a56.png' alt='Contact Us'></li><li><img src='/HomepageContent/report_ic_a91fef76b6.png' alt='Report an Incident'></li></ul></span><div class='right_sec'><ul><li><a href='/isusap_new/chat/startchat.aspx' aria-label='Live Help'>Live Help</a></li><li><a href='/customer/aka/writetous.aspx' aria-label='Feedback'>Feedback</a></li><li><a href='/contact-us/touchpoints/locate-us' aria-label='Contact Us'>Contact Us</a></li><li><a href='/suraksha/entry.aspx' aria-label='Report an Incident'>Report an Incident</a></li></ul></div>
+
+    <!--<span class="left_sec" id="clickme">
+        <ul>
+            <li><img src="/images/live_help.png" alt="" title=""></li>
+            <li><img src="/images/feedback_ic.png" alt="" title=""></li>
+            <li><img src="/images/contact_ic.png" alt="" title=""></li>
+            <li><img src="/images/report_ic.png" alt="" title=""></li>
+        </ul>
+    </span>
+    <div class="right_sec">
+        <ul>
+            <li><a href="/isusap_new/chat/startchat.aspx">Help</a></li>
+            <li><a href="/customer/aka/writetous.aspx" target="_self">Feedback</a></li>
+            <li><a href="/contact-us/touchpoints/locate-us">Contact Us</a></li>
+            <li><a href="/suraksha/entry.aspx">Report <br> an Incident</a></li>
+        </ul>
+    </div>-->
+    </div>
+      
+      <main class="cd-main-content">
+    <div class="inside-page-content">
+          <div class="inside-banner" style="background: url(/HeaderImages/contact_c0989491dc.jpg) center center no-repeat; visibility: visible;">
+            <div class="page-title-area">
+                <div class="page-title"><h1>Online Complaint</h1></div>
+            </div>
+            <div class="banner-icon">
+            	<div class="banner-breadcrumb-area">
+                    <div class="breadcrumb"><a href='/'>Home</a>/<span>Contact Us</span>/<span>Touchpoints</span>/Locate Us</div>
+                    <div class="download-print">
+            <a href='mailto:TPDDL-CMS@tatapower-ddl.com?subject=Page%20Link%20URL%20&body=Please%20click%20the%20url%20to%20access%20the%20desired%20page%20...%20https://www.tatapower-ddl.com/includes/UserControl.asmx' class='mail'>e-mail</a>         
+            <a href="javascript:window.print();" class="print">Print</a>
+        </div>
+                </div>
+            </div>
+        </div><!-- inside-banner -->
+          <div class="insideContent3">
+            <section class="complaint-management">
+                <h2>Online Complaint</h2>
+                <div class="back"><a href="complaint-registration.aspx">Back</a></div>
+           
+                 <h6><span id="lblselection">Option Selected : <u>No Power</u> (O&M  Complaint). <br><a href='complaint-registration.aspx'>Click here</a> to select other option</span></h6>               
+                <h5 class="required">Star Marked (<span>*</span>) fields are mandatory</h5>
+               
+                    <ul>
+                        <li class="label-text22"><span id="lblerrormsg" class="errormsg"></span></li>
+                        <li class="label-text22"><strong>CANO.<span id="lblvldCANO"><b><font size="2">*</font></b></span></strong><input name="txtcano" type="text" value="60014463164" id="txtcano" class="input" />
+                          </li>
+                         <li class="label-text22 capcha-box"><input type="submit" name="btngetconsdetails" value="Get Details" id="btngetconsdetails" class="submit_btn8" /></li>
+                        <li class="label-text22"><strong>Name<span><span id="lblvldName"><b><font size="2">*</font></b></span></span></strong> <input name="txtconsname" type="text" value="Mr. RAMESHWAR DASS BOHET" maxlength="40" readonly="readonly" id="txtconsname" class="input" /></li>
+                        <li class="label-text22"><strong>Landline</strong><input name="txtphone" type="text" maxlength="8" id="txtphone" class="input" onkeypress="javascript:return allownumbers(event);" /></li>
+                        <li class="label-text22"><strong>Mobile<span>*</span></strong><input name="txtmobile" type="text" maxlength="10" id="txtmobile" class="input" onkeypress="javascript:return allownumbers(event);" /></li>
+                        <li class="label-text22"><strong>Address<span><span id="lblvldADDRESS"><b><font size="2">*&nbsp;</font></b></span></span></strong><textarea name="txtsuppadd" rows="2" cols="20" readonly="readonly" id="txtsuppadd" class="input">
+PLOT NO 19 KH. NO. 38/22 GROUND FLOOR GRAM SABHA STREET NO. GALI NO-2 VILLAGE MAMURPUR CITY DELHI 110040 LANDMARK NEAR RADHA SWAMI ASHRAM</textarea></li>
+                          
+
+                        <li class="label-text22"><strong>Remarks<span><span id="lblvldRMRK"><b><font size="2">*</font></b></span></span></strong><textarea name="txtremarks" rows="2" cols="20" id="txtremarks" class="input">
+</textarea></li>
+                        <li class="capcha-box">
+                                <div class="left"><span class="captchaImg"> <img id="Img" title="Image Verification Code" alt="" src="../Img.aspx" border="0" /></span>
+            	                    <a href="javascript:void(0);" onclick="javascript:return ChangeImage();" >Change Image</a></span></div>
+                                <div class="right">  <input name="TxtImgVer" type="text" id="TxtImgVer" onkeypress="return validationcheck(event)" onblur="if(this.value==&#39;&#39;){this.value=&#39;Enter code as it appears&#39;};" onfocus="if(this.value==&#39;Enter code as it appears&#39;){this.value=&#39;&#39;};" value="Enter code as it appears" class="input" />
+                                  </div>
+                            </li>
+                 
+                    
+                     <li class="label-text22 capcha-box">
+                                            <input type="submit" name="btnsubmit" value="Submit" id="btnsubmit" title="Submit" class="submit_btn8" />
+                <span id="lblerrormsgsubmit" class="errormsg"></span>
+                         </li>   </ul>
+                   
+            </section>
+        </div>
+    </div><!-- inside-page-content -->
+
+        <p>
+    <div style="visibility:hidden;">
+           <audio id="vinaud" controls="" preload="none">
+    <source id="vinsrc" type="audio/mpeg" />
+Your browser does not support the audio element.
+</audio>
+    </div>
+        
+    
+    </p>
+        
+        
+    </form>
+      <div class="section fp-auto-height footer_bg" id="section3">
+    <div class="footer_link">
+        <ul>
+            <li>
+                <ul>
+                    <li>
+                        <h3><a href="/">Home</a></h3>
+                        <h3>Corporate</h3>
+                        <ul>
+                            <li>
+                                <a href="/corporate/our-company/company-profile">- Our Company</a>
+                                <!--<a href="/corporate/innovation-journey/business-excellance-initiatives">- Innovation Journey</a>-->
+                                <a href="/corporate/evolving-into-smart-utility/overview">- Evolving into a Smart Utility</a>
+                                <a href="/corporate/sustainability/overview">- Sustainability</a>
+                            </li>
+                        </ul>
+                        <h3>Consultancy Services</h3>
+                        <ul>
+                            <li>
+                                <a href="/consultancy-services/service-offerings/overview">- Introduction</a>
+                                <a href="/consultancy-services/service-offerings/overview">- Service Offerings</a>
+                                <a href="/consultancy-services/service-offerings/project-management-consultancy-services">- Projects</a>
+                                <a href="/consultancy-services/skill-development/learning-centres-infrastructure">- Skill Development</a>
+                                <a href="/vendor_enquiry/enquiry.aspx">- Enquiry</a>
+                            </li>
+                        </ul>
+
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h3>Customer</h3>
+                <ul>
+                    <li>
+                        <a href="/applyconn/startconnection.aspx">- Apply for Connection</a>
+                        <a href="/billpay/paybillonline.aspx">- Bill Payment</a>
+                        <a href="/customers/solutions/customer-centricity">- Solutions</a>
+                        <a href="/scheduleoutage/119/customers/outage-details/scheduled-outage">- Outages</a>
+                        <a href="/customers/energy-conservation/overview">- Energy Conservation</a>
+                        <a href="/customer/aka/writetous.aspx">- Feedback</a>
+                    </li>
+                </ul>
+                <h3>CSR</h3>
+                <ul>
+                    <li>
+                        <a href="/csr/overview">- Overview</a>
+                        <a href="/csr/sig-initiatives/unnati">- Initiatives</a>
+                        <a href="/file/1083" target="_blank" title="Downloadable pdf">- CSR Brochure</a>
+                        <a href="/csr/important-lists">- Important Lists</a>
+                        <a href="/file/1085" target="_blank" title="Downloadable pdf">- CSR Annual Report</a>
+                    </li>
+                </ul>
+                
+            </li>
+            <li>
+                <h3>Media</h3>
+                <ul>
+                    <li>
+                        <a href="/press-release/199/media/press-releases">- Press Releases</a>
+                        <a href="/events/197/media/events">- Events</a>
+                        <a href="/pressarticle/196/media/press-coverages">- Press Coverages</a>
+                        <a href="/videoalbum/198/media/video-radio-clips">- Video / Radio</a>
+                        <a href="/advertisement/201/media/advertisements">- Advertisements</a>
+                        <!--<a href="#">- Feedback</a>-->
+                    </li>
+                </ul>
+                <h3>Careers</h3>
+                <ul>
+                    <li>
+                        <a href="/careers/Life@Tata-Power-DDL/hr@glance">- Life@Tata Power-DDL</a>
+                        <a href="/careers/learning-development/overview">- Learning & Development</a>
+                        <a href="/careers/work-with-us/overview">- Work With Us</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>
+                        <a href="/contact-us/touchpoints/locate-us">- Touchpoints</a>
+                        <a href="/contact-us/touchpoints/head-of-department-customer-services">- Customer Contacts</a>
+                        <a href="/contact-us/media-contact">- Media Contact</a>
+                        <a href="/contact-us/offices/corporate-office">- Offices</a>
+                        <a href="/ethics/EthicsSugam.aspx">- Report Unethical Issues</a>
+                        <a href="/contact-us/safety-issues/overview">- Safety Issues</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h3>Follow Us On</h3>
+                <ul class="social_ic">
+                    <li><a href="https://www.facebook.com/TataPower.DDL" aria-label="facebook" target="_blank" rel="noreferrer" title="Facebook opening in new window"><img src="/images/facebook_ic.png" alt=""></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCyu6HLsGXEF1Ebf8wPQNivg/" aria-label="youtube" target="_blank" rel="noreferrer" title="Youtube opening in new window"><img src="/images/you_tube.png" alt=""></a></li>
+                    <li><a href="https://www.twitter.com/TataPower_DDL" target="_blank" aria-label="twitter" rel="noreferrer" title="Twitter opening in new window"><img src="/images/twitter.png" alt=""></a></li>
+                    <li><a href="http://www.slideshare.net/TataPowerDDL" target="_blank" aria-label="slide share" rel="noreferrer" title="Slide share opening in new window"><img src="/images/slide_share.png" alt=""></a></li>
+                    <li><a href="https://tatapower-ddl.blog/" aria-label="tatapower-ddl blog" target="_blank" rel="noreferrer"  title="TPDDL Blog opening in new window"><img src="/images/blog.png" alt=""></a></li>
+                </ul>
+                <h3>Download our Mobile App</h3>
+                <ul class="social_ic">
+                <li><a href="https://play.google.com/store/apps/details?id=com.tpddl.www.tpddlconnect" target="_blank" aria-label="google play" rel="noreferrer" title="Play Store link opening in new window"><span><img src="/images/android.png" alt=""></span> </a></li>
+                <li><a href="https://itunes.apple.com/in/app/tpddl-connect-an-official-app/id1287044083?mt=8" target="_blank" aria-label="apple" rel="noreferrer" title="Itunes opening in new window"><img src="/images/icon8.png" alt=""></a></li>
+                </ul>
+                <ul class="other_link">
+                    <h3>Toll Free No. <a href="#">19124 / 1800-208-9124</a></h3>
+                    <li><a href="/disclaimer" aria-label="disclaimer">Disclaimer</a><a href="/privacy-policy" aria-label="privacypolicy">Privacy Policy</a><a href="/sitemap" aria-label="sitemap">Sitemap</a></li>
+                    <li>Copyright 2019 Tata Power DDL</li>
+                    <li>
+    <div class="related-links">
+        <span class="title">Related Links</span>
+        <div class="drop">
+             <span id="_footer_panel_lbl">
+             <!--<a href="http://delhi.gov.in/wps/wcm/connect/doit/Delhi+Govt/Delhi+Home" target="_blank">Goverment of Delhi</a>
+             <a href="http://www.derc.gov.in/" target="_blank">D.E.R.C</a>
+             <a href="http://www.tatapower.com/" target="_blank">Tata Power Company Limited</a>
+             <a href="http://www.tata.com/" target="_blank">Tata Group of Companies</a>
+             <a href="http://www.cercind.gov.in/" target="_blank">CERC</a>
+             <a href="http://aptel.gov.in/" target="_blank">ATE</a>
+             <a href="http://www.cea.nic.in/" target="_blank">CEA</a>
+             <a href="http://www.nrldc.org/" target="_blank">Northan Regional Load Despatch Centre</a>
+             <a href="http://www.delhisldc.org/" target="_blank">State Load Despatch Centre</a>-->
+			 <a href='http://delhi.gov.in/wps/wcm/connect/doit/Delhi+Govt/Delhi+Home' target='_blank'  rel='noreferrer' aria-label='Government of Delhi'  title='Government of Delhi opening in new window' >Government of Delhi</a><a href='http://www.derc.gov.in/' target='_blank'  rel='noreferrer' aria-label='D.E.R.C'  title='D.E.R.C opening in new window' >D.E.R.C</a><a href='http://www.tatapower.com/' target='_blank'  rel='noreferrer' aria-label='Tata Power Company Limited'  title='Tata Power Company Limited opening in new window' >Tata Power Company Limited</a><a href='http://www.tata.com/' target='_blank'  rel='noreferrer' aria-label='Tata Group of Companies'  title='Tata Group of Companies opening in new window' >Tata Group of Companies</a><a href='http://www.cercind.gov.in/' target='_blank'  rel='noreferrer' aria-label='CERC'  title='CERC opening in new window' >CERC</a><a href='http://aptel.gov.in/' target='_blank'  rel='noreferrer' aria-label='ATE'  title='ATE opening in new window' >ATE</a><a href='http://www.cea.nic.in/' target='_blank'  rel='noreferrer' aria-label='CEA'  title='CEA opening in new window' >CEA</a><a href='http://www.nrldc.org/' target='_blank'  rel='noreferrer' aria-label='Northern Regional Load Despatch Centre'  title='Northern Regional Load Despatch Centre opening in new window' >Northern Regional Load Despatch Centre</a><a href='http://www.delhisldc.org/' target='_blank'  rel='noreferrer' aria-label='State Load Despatch Centre'  title='State Load Despatch Centre opening in new window' >State Load Despatch Centre</a>
+			 
+			 </span>
+           <!-- <a href="#">Site 3</a>-->
+        </div>
+    </div>
+    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="visitors">Website Visitors : <strong>43551129</strong></div>
+
+    </div>
+</div>
+
+<!-- footer panel -->
+
+  <!-- footer panel js panel -->
+
+<script type="text/javascript" src="/Script/jquery.min.js"></script>
+<script type="text/javascript" src="/Script/jquery.mobile.custom.min.js"></script>
+
+<script type="text/javascript" src="/Script/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript" src="/Script/nav.js"></script> <!-- Resource jQuery -->
+
+<script type="text/javascript" src="/Script/slick.min.js"></script>
+<script type="text/javascript" src='/Script/slick-animation.min.js'></script>
+<script type="text/javascript" src="/Script/wow.js"></script>
+<script type="text/javascript" src="/Script/jquery.colorbox-min.js"></script>
+<script>
+$(document).ready(function(e) {
+	if($(window).width()>1024){
+    $(window).scroll(function() {
+		$(".left_sec").addClass("active");
+		$('.right_sec').hide();
+		$('.login_popbox').hide();  
+		   
+		   });
+	}
+});
+</script>
+
+<script type="text/javascript" src="/Script/content.js"></script>
+<script type="text/javascript" src="/Script/increase-decrease.js"></script>
+<!-- js panel
+<script type="text/javascript" src="/Script/common.js"></script>
+<script type="text/javascript" src="/Script/inside.js"></script>
+    
+    -->
+
+
+          <script type="text/javascript" src="../Script/common.js"></script>
+        <script type="text/javascript" src="../Script/inside.js"></script>
+</body>
+</html>
+
