@@ -62,49 +62,52 @@ complaintRegisterPayload = {
 }
 
 '''
-import openpyxl, requests, logging, random, pprint
+import openpyxl, requests, logging, random
 from bs4 import BeautifulSoup
+from datetime import datetime
+
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
-logging.disable(logging.CRITICAL) #disables all logging messages
+#logging.disable(logging.CRITICAL) #disables all logging messages
 
+#File Name
 file = 'CANumbers.xlsx' #This needs to be in PWD
+
+#WorkSheet names
 CANumbersWorkSheet = 'CANumbers'
+complaintNumberWorkSheet = 'ComplaintNumbers'
+remarksWorkSheet = 'Remarks'
 
-remarksList = ['No supply in area.','No electricity.','Power Outage in my area.']
-
+#Opening workbook
 workbook = openpyxl.load_workbook(filename = file) #Opening the .xlsx file
 #TODO return an error if file is not found OR unable to open file.
 logging.debug('Workbook opened')
 
+#Worksheet objects
+CASheet = workbook[CANumbersWorkSheet]
+remarksSheet = workbook[remarksWorkSheet]
+complaintSheet = workbook[complaintNumberWorkSheet]
+
+
+
+
+
 
 def main():
     logging.debug('Started main()')
-    
-    '''
-    for each CA number:
-        get details
-        lodge complaint
-    '''
-    CASheet = workbook[CANumbersWorkSheet]
-    logging.debug('Sheet selected')
-    NumberOfRecords = len(CASheet['A']) - 1
 
-    logging.debug('Starting iteration')
+    NumberOfRecords = len(CASheet['A']) - 1
     
-    for record in range(2, NumberOfRecords + 1):
+    for record in range(2, NumberOfRecords + 1):    #To skip the first line
         CANumber = CASheet.cell(row = record, column = 1).value
         
         if CANumber != None:
-            payload = getDetailsFromCA(CANumber)
+            payload = getDetailsFromCA(CANumber,record) #As of now sending index to update values in sheet
             lodgeComplaint(payload)
             
-    
-            
-    
-        
     logging.debug('Finished main()')
     
-def getDetailsFromCA(CANumber):
+    
+def getDetailsFromCA(CANumber,index):
     logging.debug('Started getDetailsFromCA()')
     
     getDetailsPayload = {
@@ -149,14 +152,42 @@ def getDetailsFromCA(CANumber):
         name = soup.find(id = 'txtconsname')['value'] #https://stackoverflow.com/questions/2612548/extracting-an-attribute-value-with-beautifulsoup
         #phone = soup.find(id = 'txtphone')
         #mobile = soup.find(id = 'txtmobile')
-        remarks = remarksList[random.randrange(0,len(remarksList))]
-        logging.debug('Fethed fields')
+        logging.debug('Scraped fields successfully')
+
+        #Getting remarks from the sheet
+        logging.debug('Getting remarks from the sheet')
+        remarks = remarksSheet['A']
+        
+        remarksList = []
+        
+        for remark in remarks:
+            if remark.value != None:
+                remarksList.append(str(remark.value))
+
+        remarkCount = len(remarksList)
+        
+        if remarkCount > 1:
+            remark = remarksList[random.randrange(0,remarkCount)]
+        elif remarkCount == 1:
+            remark = remarksList[0]
+        else:
+            remark = ''
+            
+        logging.debug('Remarks fetched')
+            
+        
         
         #Adding these details to payload
         complaintRegisterPayload['txtsuppadd'] = address
         complaintRegisterPayload['txtconsname'] = name
-        complaintRegisterPayload['txtremarks'] = remarks
+        complaintRegisterPayload['txtremarks'] = remark
         logging.debug('Updated payload')
+
+        #Updating details in the worksheet
+        CASheet.cell(row = index, column = 2).value = name
+        CASheet.cell(row = index, column = 5).value = address
+        workbook.save(file)
+        logging.debug('Saved fields to workbook')
 
         return(complaintRegisterPayload)
     
@@ -165,10 +196,41 @@ def getDetailsFromCA(CANumber):
 
 
 def lodgeComplaint(payload):
-    pprint.pprint(payload)
-    print('\n\n')
+    logging.debug('started lodgeComplaint()')
+
+    try:
+        '''
+        response = requests.post('https://www.tatapower-ddl.com/customer/complaint/regcomp_detailsrevamp.aspx', data = payload)
+        response.raise_for_status() #Raises an exception in case of a failed response code
+        #TODO : Handle the case if complaint already registered
+        logging.debug('Response fine')
+
+        soup = BeautifulSoup(response.text,'html.parser')
+        #extract complaint number from response
+        '''
+        complaintNumber = 'some complaint number'
+        
+        previousComplaints = complaintSheet['A']
+        count = 0
+
+        for complaint in previousComplaints:
+            if complaint.value != None:
+                count += 1
+                
+        count += 1
+
+        logging.debug('Adding complaint number in sheet')
+        timestamp = datetime.now();timestamp.strftime("%d/%m/%Y %H:%M:%S")
+        complaintSheet.cell(row = count, column = 1).value = timestamp
+        complaintSheet.cell(row = count, column = 2).value = payload['txtcano']
+        complaintSheet.cell(row = count, column = 3).value = 'some complaint number'
+        workbook.save(file)
+        logging.debug('Finished lodgeComplaint()')
+        
+    except requests.exceptions.RequestException as e:
+        print('Response Error : ', e)
 
 main()
-#getDetailsFromCA('60014463164')
+
 
     
