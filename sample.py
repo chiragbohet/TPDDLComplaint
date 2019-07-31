@@ -66,7 +66,7 @@ import openpyxl, requests, logging, random
 from bs4 import BeautifulSoup
 from datetime import datetime
 
-logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(filename = 'logs.txt',level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 #logging.disable(logging.CRITICAL) #disables all logging messages
 
 #File Name
@@ -103,7 +103,7 @@ def main():
         if CANumber != None:
             payload = getDetailsFromCA(CANumber,record) #As of now sending index to update values in sheet
             lodgeComplaint(payload)
-            
+    print('Done!')
     logging.debug('Finished main()')
     
     

@@ -1,0 +1,16 @@
+2019-07-31 10:19:03,424 - DEBUG - Workbook opened
+2019-07-31 10:19:03,424 - DEBUG - Started main()
+2019-07-31 10:19:03,424 - DEBUG - Started getDetailsFromCA()
+2019-07-31 10:19:03,427 - DEBUG - Starting new HTTPS connection (1): www.tatapower-ddl.com:443
+2019-07-31 10:19:04,236 - DEBUG - https://www.tatapower-ddl.com:443 "POST /customer/complaint/regcomp_detailsrevamp.aspx HTTP/1.1" 200 14904
+2019-07-31 10:19:04,239 - DEBUG - Response fine
+2019-07-31 10:19:04,273 - DEBUG - Soup Made
+2019-07-31 10:19:04,279 - DEBUG - Scraped fields successfully
+2019-07-31 10:19:04,279 - DEBUG - Getting remarks from the sheet
+2019-07-31 10:19:04,279 - DEBUG - Remarks fetched
+2019-07-31 10:19:04,279 - DEBUG - Updated payload
+2019-07-31 10:19:04,294 - DEBUG - Saved fields to workbook
+2019-07-31 10:19:04,295 - DEBUG - started lodgeComplaint()
+2019-07-31 10:19:04,295 - DEBUG - Adding complaint number in sheet
+2019-07-31 10:19:04,308 - DEBUG - Finished lodgeComplaint()
+2019-07-31 10:19:04,308 - DEBUG - Finished main()
