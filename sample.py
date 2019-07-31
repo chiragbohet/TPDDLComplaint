@@ -131,12 +131,12 @@ def getDetailsFromCA(CANumber,index):
     '__EVENTVALIDATION':'/wEdAAo+Yg5UIlmHX9pXTkoEn0B9EcOgvHRMMdknX1hKEqsA4Zysd+iXqvJbUqR3wDY/ZCBqaqe4WPrPNXSx0nLeM0MxIkjkwO2Hn9+IKdzB92ZTmTEmrsU+Uo4cUGFL28mNcdDPnskGUk9pqqILy5LAvTehaihfy87szX5n2LyriLG2osZV+oV9ZHJPsVyMonIqKvYfeetr3c4H3XmikgJc2ZlI+O/nW7ap4phzpExocMkEqc8lYKgM3TV2apVtDd0IKaE=',
     'searchtext':'',
     'txtcano':CANumber,
-    'txtconsname':'',
+    'txtconsname':Account holder name,
     'txtphone':'',
     'txtmobile':'',
-    'txtsuppadd':'',
+    'txtsuppadd':address,
     'txtremarks': '',
-    'TxtImgVer':'nMeEzX',
+    'TxtImgVer':captcha,
     'btnsubmit': 'Submit'
     }
 
